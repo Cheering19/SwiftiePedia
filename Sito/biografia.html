@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taylor Swift - Biografia e Storia</title>
+        <meta charset="UTF-8">
+        <style>
+            :root {
+                --page-bg: #c89cea;
+                --panel-bg: #c17bea;
+                --accent: #b73074;
+                --accent-dark: #896be4;
+                --border: #ff69b4;
+                --text: #333;
+            }
+
+            body {
+                background-color: var(--page-bg);
+                font-family: Arial, sans-serif;
+                margin: 0;
+                color: var(--text);
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 24px auto;
+                padding: 24px;
+                background-color: var(--panel-bg);
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .intro-section {
+                margin-bottom: 24px;
+            }
+
+            .albums-section {
+                margin-top: 24px;
+                padding: 32px;
+            }
+
+            h1 {
+                color: var(--accent);
+                text-align: center;
+                padding: 20px;
+                border: 2px solid var(--border);
+                background-color: var(--accent-dark);
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .hero-image {
+                display: block;
+                margin: 18px auto;
+                width: 50%;
+                max-width: 380px;
+                border: 2px solid #537261;
+                background-color: #9ea4d9;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+            .intro {
+                text-align: center;
+                padding-bottom: 32px;
+                margin-bottom: 24px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .toast-toggle {
+                position: fixed;
+                top: 16px;
+                left: 16px;
+                z-index: 1001;
+                border: 0;
+                border-radius: 999px;
+                padding: 12px 18px;
+                background: var(--accent-dark);
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+            }
+
+            .toast-menu {
+                position: fixed;
+                top: 64px;
+                left: 16px;
+                z-index: 1000;
+                display: none;
+                flex-direction: column;
+                gap: 8px;
+                padding: 14px;
+                min-width: 180px;
+                background: rgba(255, 255, 255, 0.95);
+                border-radius: 14px;
+                box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+            }
+
+            .toast-menu.is-open {
+                display: flex;
+            }
+
+            .toast-menu a {
+                color: var(--accent);
+                text-decoration: none;
+                font-weight: bold;
+                padding: 6px 8px;
+                border-radius: 8px;
+            }
+
+            .toast-menu a:hover {
+                background: rgba(184, 48, 116, 0.12);
+            }
+        </style>
+    </head>
+    <body>
+        <button class="toast-toggle" aria-expanded="false" aria-controls="toastMenu">Menu</button>
+        <nav id="toastMenu" class="toast-menu" aria-hidden="true">
+            <a href="Taylor_Swift.html">Home</a>
+            <a href="#intro">Intro</a>
+            <a href="#furto_di_album">Album</a>
+            <a href="#biografia">Biografia</a>
+            <a href="https://www.taylorswift.com/" target="_blank">Sito Ufficiale</a>
+        </nav>
+
+        <div id="intro" class="container intro-section">
+            <h1>Taylor Swift - Biografia e Storia</h1>
+            <img class="hero-image" src="taylor_swift_picture.jpg" alt="Taylor Swift">
+            <p class="intro">Benvenuto/a nella pagina ufficiale di Taylor Swift!</p>
+
+            <h2>Chi è <strong>Taylor Swift</strong>?</h2>
+            <p>
+                Taylor Swift e una cantautrice, attrice e produttrice discografica statunitense.
+                Nata il 13 dicembre 1989 a Reading, Pennsylvania, ha iniziato la sua carriera
+                musicale all'eta di 14 anni.
+            </p>
+        </div>
+        <div id="biografia" class="container biography-section">
+            <h3><strong>Storia</strong> e inizi</h3>
+            <p>
+                Nata da genitori che avevano una fattoria, Taylor ha mostrato un interesse precoce per la musica e la recitazione. A 14 anni, si è trasferita a Nashville, Tennessee, per perseguire una carriera musicale. Il suo talento come cantautrice l'ha portata a firmare un contratto con la Big Machine Records, dando inizio alla sua ascesa nel mondo della musica country e pop.
+            </p>
+        </div>
+        <div id="debutto" class="container debut-section">
+            <h3><strong>Debutto</strong>, il suo primo album</h3>
+            <p>
+                Il primo album di Taylor Swift, intitolato "Taylor Swift", è stato pubblicato nel 2006 all'età di 17 anni. L'album ha ottenuto un grande successo commerciale e ha lanciato la carriera di Taylor, portandola a diventare una delle artiste più influenti e di successo del suo tempo.
+            </p>
+        </div>
+        <div id="furto_di_album" class="container albums-section">
+            <h3><strong>Gli album rubati</strong></h3>
+            <p>
+                La storia dei re-recordings (Taylor's Version) e del furto dei master da parte di Scooter Braun.
+            </p>
+        </div>
+        <div id="riconoscimenti" class="container recognition-section">
+            <h3><strong>Riconoscimenti</strong> e premi</h3>
+            <p>
+                Paragrafo riconoscimenti
+                Awards vinti, record di vendite, impatto culturale e influenza sulla musica contemporanea.
+            </p>
+        </div>
+
+        <script src="menu.js"></script>
+    </body>
+</html>

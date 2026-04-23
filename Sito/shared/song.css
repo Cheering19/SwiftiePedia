@@ -1,0 +1,135 @@
+:root {
+    color-scheme: light;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--page-bg, #f4f4f4);
+    color: var(--text, #222);
+}
+
+a {
+    color: var(--accent, #3366cc);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 24px;
+    background-color: var(--panel-bg, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px var(--shadow, rgba(0, 0, 0, 0.1));
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent, #3366cc);
+    color: var(--button-text, #ffffff);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: var(--accent-hover, var(--accent, #3366cc));
+    transform: translateY(-1px);
+}
+
+h1 {
+    color: var(--heading, var(--accent, #3366cc));
+    text-align: center;
+    padding: 20px;
+    border: 2px solid var(--border, var(--accent, #3366cc));
+    background-color: var(--title-bg, transparent);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow, rgba(0, 0, 0, 0.1));
+}
+
+.song-header {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.song-meta {
+    flex: 1 1 280px;
+}
+
+.song-meta h2 {
+    margin-top: 0;
+    color: var(--heading, var(--accent, #3366cc));
+}
+
+.section {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: var(--section-bg, rgba(255, 255, 255, 0.5));
+    border-left: 4px solid var(--accent, #3366cc);
+    border-radius: 8px;
+}
+
+.section h3 {
+    color: var(--heading, var(--accent, #3366cc));
+    margin-top: 0;
+}
+
+.note-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.note-list li {
+    padding: 8px 0 8px 20px;
+    position: relative;
+    border-bottom: 1px solid var(--track-separator, rgba(0, 0, 0, 0.08));
+}
+
+.note-list li:last-child {
+    border-bottom: none;
+}
+
+.note-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent, #3366cc);
+    font-weight: bold;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--accent, #3366cc);
+    color: var(--button-text, #ffffff);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+@media (max-width: 720px) {
+    .container {
+        margin: 16px;
+        padding: 18px;
+    }
+
+    .song-header {
+        gap: 18px;
+    }
+}

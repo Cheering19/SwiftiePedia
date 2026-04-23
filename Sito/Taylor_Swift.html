@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taylor Swift</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                background-color: #c89cea;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                color: #333;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            .container {
+                max-width: 900px;
+                margin: 24px auto;
+                padding: 24px;
+                background-color: #c17bea;
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .intro-section {
+                margin-bottom: 24px;
+            }
+
+            .albums-section {
+                margin-top: 24px;
+                padding: 32px;
+            }
+
+            h1 {
+                color: #b73074;
+                text-align: center;
+                padding: 20px;
+                border: 2px solid #ff69b4;
+                background-color: #896be4;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .hero-image {
+                display: block;
+                margin: 18px auto;
+                width: 50%;
+                max-width: 380px;
+                border: 2px solid #537261;
+                background-color: #9ea4d9;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+            .intro {
+                text-align: center;
+                padding-bottom: 32px;
+                margin-bottom: 24px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            }
+
+            .album-list {
+                margin-top: 32px;
+                padding-top: 24px;
+            }
+
+            .album-item {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                background-color: #f6d4ff;
+                border: 2px solid #b77ad3;
+                border-radius: 10px;
+                padding: 12px;
+                margin-bottom: 12px;
+                cursor: pointer;
+                transition: transform 0.2s, box-shadow 0.2s;
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .album-item:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            .album-cover {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 8px;
+                border: 2px solid #8e5fa4;
+                flex-shrink: 0;
+            }
+
+            .album-title {
+                margin: 0;
+                font-size: 18px;
+            }
+
+            .album-description {
+                margin: 4px 0 0;
+                font-size: 14px;
+            }
+
+            a {
+                color: #5c2476;
+                font-weight: bold;
+            }
+
+            .toast-toggle {
+                position: fixed;
+                top: 14px;
+                left: 14px;
+                z-index: 1001;
+                border: none;
+                border-radius: 999px;
+                padding: 10px 14px;
+                font-weight: bold;
+                cursor: pointer;
+                background: #5c2476;
+                color: #fff;
+            }
+
+            .toast-toggle:hover {
+                background: #4a1d60;
+            }
+
+            .toast-menu {
+                position: fixed;
+                top: 56px;
+                left: 14px;
+                z-index: 1000;
+                min-width: 220px;
+                max-height: 70vh;
+                overflow-y: auto;
+                padding: 10px;
+                border-radius: 12px;
+                background: rgba(255, 255, 255, 0.96);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+                display: none;
+            }
+
+            .toast-menu.open {
+                display: block;
+            }
+
+            .toast-menu a {
+                display: block;
+                padding: 8px 10px;
+                border-radius: 8px;
+                text-decoration: none;
+                color: #4b2a63;
+                font-weight: bold;
+            }
+
+            .toast-menu a:hover {
+                background: #f2e7ff;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="toast-toggle" aria-expanded="false" aria-controls="toastMenu">Menu</button>
+        <nav id="toastMenu" class="toast-menu" aria-hidden="true">
+            <a href="#intro">Intro</a>
+            <a href="#albums">Album</a>
+            <a href="biografia.html">Biografia</a>
+            <a href="https://www.taylorswift.com/" target="_blank">Sito Ufficiale</a>
+        </nav>
+
+        <div id="intro" class="container intro-section">
+            <h1>Taylor Swift</h1>
+            <img class="hero-image" src="taylor_swift_picture.jpg" alt="Taylor Swift">
+            <p class="intro">Benvenuto/a nella pagina ufficiale di Taylor Swift!</p>
+
+            <h2>Chi è <strong>Taylor Swift</strong>?</h2>
+            <p>
+                Taylor Swift e una cantautrice, attrice e produttrice discografica statunitense.
+                Nata il 13 dicembre 1989 a Reading, Pennsylvania, ha iniziato la sua carriera
+                musicale all'eta di 14 anni.
+            </p>
+        </div>
+
+        <div id="albums" class="container albums-section">
+            <h2><strong>Album più famosi</strong></h2>
+            <div class="album-list">
+                <a href="Albums/Taylor-Swift/taylor-swift.html" class="album-item">
+                    <img class="album-cover" src="https://www.udiscovermusic.com/wp-content/uploads/2018/09/Taylor-Swift-debut-album-cover-web-optimised-820-354x354.jpg" alt="Taylor Swift album cover">
+                    <div>
+                        <p class="album-title"><strong>Taylor Swift (2006)</strong></p>
+                        <p class="album-description">Debutto country con testi sinceri.</p>
+                    </div>
+                </a>
+
+                <a href="Albums/Fearless/fearless.html" class="album-item">
+                    <img class="album-cover" src="https://m.media-amazon.com/images/I/518hcXfYw3L._UF1000,1000_QL80_.jpg" alt="Fearless album cover">
+                    <div>
+                        <p class="album-title"><strong>Fearless (2008)</strong></p>
+                        <p class="album-description">Country-pop brillante e romantico.</p>
+                    </div>
+                </a>
+
+                <a href="Albums/Speak-Now/speak-now.html" class="album-item">
+                    <img class="album-cover" src="https://upload.wikimedia.org/wikipedia/en/8/8f/Taylor_Swift_-_Speak_Now_cover.png" alt="Speak Now album cover">
+                    <div>
+                        <p class="album-title"><strong>Speak Now (2010)</strong></p>
+                        <p class="album-description">Testi personali e suono piu rock.</p>
+                    </div>
+                </a>
+
+                <a href="Albums/Red/red.html" class="album-item">
+                    <img class="album-cover" src="https://upload.wikimedia.org/wikipedia/en/e/e8/Taylor_Swift_-_Red.png" alt="Red album cover">
+                    <div>
+                        <p class="album-title"><strong>Red (2012)</strong></p>
+                        <p class="album-description">Emozioni forti tra pop e country.</p>
+                    </div>
+                </a>
+
+                <a href="Albums/1989/1989.html" class="album-item">
+                    <img class="album-cover" src="https://upload.wikimedia.org/wikipedia/en/f/f6/Taylor_Swift_-_1989.png" alt="1989 album cover">
+                    <div>
+                        <p class="album-title"><strong>1989 (2014)</strong></p>
+                        <p class="album-description">Passaggio deciso al pop moderno.</p>
+                    </div>
+                </a>
+
+                <a href="Albums/Reputation/reputation.html" class="album-item">
+                    <img class="album-cover" src="https://upload.wikimedia.org/wikipedia/en/f/f2/Taylor_Swift_-_Reputation.png" alt="Reputation album cover">
+                    <div>
+                        <p class="album-title"><strong>Reputation (2017)</strong></p>
+                        <p class="album-description">Atmosfere scure e produzione potente.</p>
+                    </div>
+                </a>
+
+                <a href="Albums/Lover/lover.html" class="album-item">
+                    <img class="album-cover" src="https://upload.wikimedia.org/wikipedia/en/c/cd/Taylor_Swift_-_Lover.png" alt="Lover album cover">
+                    <div>
+                        <p class="album-title"><strong>Lover (2019)</strong></p>
+                        <p class="album-description">Colori vivaci e temi romantici.</p>
+                    </div>
+                </a>
+
+                <a href="Albums/Folklore/folklore.html" class="album-item">
+                    <img class="album-cover" src="https://upload.wikimedia.org/wikipedia/en/f/f8/Taylor_Swift_-_Folklore.png" alt="Folklore album cover">
+                    <div>
+                        <p class="album-title"><strong>Folklore (2020)</strong></p>
+                        <p class="album-description">Intimo, narrativo e acustico.</p>
+                    </div>
+                </a>
+
+                <a href="Albums/Evermore/evermore.html" class="album-item">
+                    <img class="album-cover" src="https://cdn-images.dzcdn.net/images/cover/5bced293f3a0568a5f5111f92cbca47f/0x1900-000000-80-0-0.jpg" alt="Evermore album cover">
+                    <div>
+                        <p class="album-title"><strong>Evermore (2020)</strong></p>
+                        <p class="album-description">Continuita folk con toni malinconici.</p>
+                    </div>
+                </a>
+            
+                <a href="Albums/Midnights/midnights.html" class="album-item">
+                    <img class="album-cover" src="https://cdn-images.dzcdn.net/images/cover/6d83839dd0534f28751e56dc0bc29ef6/0x1900-000000-80-0-0.jpg" alt="Midnights album cover">
+                    <div>
+                        <p class="album-title"><strong>Midnights (2022)</strong></p>
+                        <p class="album-description">Riflessioni notturne con sonorita pop.</p>
+                    </div>
+                </a>
+                
+                <a href="Albums/Midnights-3am/midnights-3am.html" class="album-item">
+                    <img class="album-cover" src="https://cdn-images.dzcdn.net/images/cover/f6a05e003277bf4533df863476c1413e/0x1900-000000-80-0-0.png" alt="Midnights 3am album cover">
+                    <div>
+                        <p class="album-title"><strong>Midnights (3am Edition) (2023)</strong></p>
+                        <p class="album-description">Versione estesa con tracce bonus.</p>
+                    </div>
+                </a>
+                
+                <a href="Albums/The-Tortured-Poets-Department/the-tortured-poets-department.html" class="album-item">
+                    <img class="album-cover" src="https://i.scdn.co/image/ab67616d0000b2738ecc33f195df6aa257c39eaa" alt="TTPD album cover">
+                    <div>
+                        <p class="album-title"><strong>The Tortured Poets Department (2023)</strong></p>
+                        <p class="album-description">Album poetico depresso.</p>
+                    </div>
+                </a>
+                
+                <a href="Albums/The-Life-of-a-Showgirl/the-life-of-a-showgirl.html" class="album-item">
+                    <img class="album-cover" src="https://upload.wikimedia.org/wikipedia/en/f/f4/Taylor_Swift_%E2%80%93_The_Life_of_a_Showgirl_%28album_cover%29.png" alt="Showgirl album cover">
+                    <div>
+                        <p class="album-title"><strong>The Life Of a Showgirl (2025)</strong></p>
+                        <p class="album-description">Pop leggero.</p>
+                    </div>
+                </a>
+            </div>
+
+            <p><a href="https://www.taylorswift.com/" target="_blank">Visita il sito ufficiale di Taylor Swift</a></p>
+        </div>
+
+        <script src="menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,225 @@
+:root {
+    color-scheme: light;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--page-bg, #f4f4f4);
+    color: var(--text, #222);
+}
+
+a {
+    color: var(--accent, #3366cc);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 24px;
+    background-color: var(--panel-bg, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px var(--shadow, rgba(0, 0, 0, 0.1));
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent, #3366cc);
+    color: var(--button-text, #ffffff);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: var(--accent-hover, var(--accent, #3366cc));
+    transform: translateY(-1px);
+}
+
+h1 {
+    color: var(--heading, var(--accent, #3366cc));
+    text-align: center;
+    padding: 20px;
+    border: 2px solid var(--border, var(--accent, #3366cc));
+    background-color: var(--title-bg, transparent);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow, rgba(0, 0, 0, 0.1));
+}
+
+.album-header {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.album-cover {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid var(--cover-border, var(--accent, #3366cc));
+    box-shadow: 0 4px 12px var(--shadow, rgba(0, 0, 0, 0.2));
+    flex-shrink: 0;
+}
+
+.album-info h2,
+.album-header h2 {
+    margin-top: 0;
+    color: var(--heading, var(--accent, #3366cc));
+}
+
+.section {
+    margin: 25px 0;
+    padding: 20px;
+    background-color: var(--section-bg, rgba(255, 255, 255, 0.5));
+    border-left: 4px solid var(--accent, #3366cc);
+    border-radius: 8px;
+}
+
+.section h3 {
+    color: var(--heading, var(--accent, #3366cc));
+    margin-top: 0;
+}
+
+.versions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.version-card {
+    background-color: var(--card-bg, rgba(255, 255, 255, 0.7));
+    padding: 15px;
+    border: 2px solid var(--card-border, rgba(0, 0, 0, 0.08));
+    border-radius: 8px;
+}
+
+.version-card h4 {
+    margin: 0 0 10px;
+    color: var(--heading, var(--accent, #3366cc));
+}
+
+.quality-list,
+.track-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quality-list li,
+.track-list li {
+    padding: 5px 0 5px 20px;
+    position: relative;
+}
+
+.quality-list li::before,
+.track-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent, #3366cc);
+    font-weight: bold;
+}
+
+.track-list li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--track-separator, rgba(0, 0, 0, 0.08));
+}
+
+.track-list li:last-child {
+    border-bottom: none;
+}
+
+.track-link {
+    color: var(--accent, #3366cc);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.track-link:hover {
+    text-decoration: underline;
+}
+
+.version-toggle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 20px 0;
+    background-color: var(--toggle-bg, rgba(0, 0, 0, 0.05));
+    border-radius: 8px;
+    padding: 4px;
+    width: fit-content;
+}
+
+.version-tab {
+    padding: 12px 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--heading, var(--accent, #3366cc));
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.version-tab.active {
+    background-color: var(--accent, #3366cc);
+    color: var(--button-text, #ffffff);
+}
+
+.version-tab:hover {
+    background-color: var(--toggle-hover, rgba(0, 0, 0, 0.08));
+}
+
+.version-content {
+    display: none;
+}
+
+.version-content.active {
+    display: block;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--accent, #3366cc);
+    color: var(--button-text, #ffffff);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+@media (max-width: 720px) {
+    .container {
+        margin: 16px;
+        padding: 18px;
+    }
+
+    .album-header {
+        gap: 18px;
+    }
+
+    .album-cover {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+}
