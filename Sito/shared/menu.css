@@ -11,6 +11,7 @@
     font-weight: bold;
     cursor: pointer;
     box-shadow: 0 8px 20px var(--menu-shadow, rgba(0, 0, 0, 0.18));
+    min-height: 44px;
 }
 
 .toast-toggle:hover {
@@ -27,6 +28,9 @@
     gap: 8px;
     padding: 14px;
     min-width: 180px;
+    max-width: calc(100vw - 32px);
+    max-height: calc(100vh - 88px);
+    overflow-y: auto;
     background: var(--menu-panel-bg, rgba(255, 255, 255, 0.95));
     border-radius: 14px;
     box-shadow: 0 10px 24px var(--menu-shadow, rgba(0, 0, 0, 0.18));
@@ -41,10 +45,27 @@
     color: var(--menu-accent, #6b6d76);
     text-decoration: none;
     font-weight: bold;
-    padding: 6px 8px;
+    padding: 10px 10px;
     border-radius: 8px;
 }
 
 .toast-menu a:hover {
     background: color-mix(in srgb, var(--menu-accent, #6b6d76) 14%, transparent);
+}
+
+@media (max-width: 720px) {
+    .toast-toggle {
+        top: 10px;
+        left: 10px;
+        padding: 10px 14px;
+    }
+
+    .toast-menu {
+        top: 58px;
+        left: 10px;
+        right: 10px;
+        min-width: 0;
+        max-width: none;
+        width: auto;
+    }
 }

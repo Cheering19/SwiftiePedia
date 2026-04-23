@@ -3,6 +3,7 @@
     <head>
         <title>Taylor Swift - Biografia e Storia</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             :root {
                 --page-bg: #c89cea;
@@ -18,6 +19,7 @@
                 font-family: Arial, sans-serif;
                 margin: 0;
                 color: var(--text);
+                -webkit-text-size-adjust: 100%;
             }
 
             html {
@@ -27,7 +29,7 @@
             .container {
                 max-width: 900px;
                 margin: 24px auto;
-                padding: 24px;
+                padding: clamp(16px, 2.8vw, 28px);
                 background-color: var(--panel-bg);
                 border-radius: 12px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -45,17 +47,20 @@
             h1 {
                 color: var(--accent);
                 text-align: center;
-                padding: 20px;
+                font-size: clamp(24px, 4.4vw, 40px);
+                line-height: 1.2;
+                padding: clamp(14px, 3vw, 24px);
                 border: 2px solid var(--border);
                 background-color: var(--accent-dark);
                 border-radius: 10px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                overflow-wrap: anywhere;
             }
 
             .hero-image {
                 display: block;
                 margin: 18px auto;
-                width: 50%;
+                width: min(100%, 380px);
                 max-width: 380px;
                 border: 2px solid #537261;
                 background-color: #9ea4d9;
@@ -64,8 +69,9 @@
             }
 
             p {
-                font-size: 18px;
+                font-size: clamp(16px, 1.9vw, 18px);
                 line-height: 1.5;
+                overflow-wrap: anywhere;
             }
 
             .intro {
@@ -88,6 +94,7 @@
                 font-weight: bold;
                 cursor: pointer;
                 box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+                min-height: 44px;
             }
 
             .toast-menu {
@@ -100,6 +107,9 @@
                 gap: 8px;
                 padding: 14px;
                 min-width: 180px;
+                max-width: calc(100vw - 32px);
+                max-height: calc(100vh - 88px);
+                overflow-y: auto;
                 background: rgba(255, 255, 255, 0.95);
                 border-radius: 14px;
                 box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
@@ -119,6 +129,31 @@
 
             .toast-menu a:hover {
                 background: rgba(184, 48, 116, 0.12);
+            }
+
+            @media (max-width: 720px) {
+                .container {
+                    margin: 12px;
+                    padding: 16px;
+                }
+
+                .albums-section {
+                    padding: 16px;
+                }
+
+                .toast-toggle {
+                    top: 10px;
+                    left: 10px;
+                    padding: 10px 14px;
+                }
+
+                .toast-menu {
+                    top: 58px;
+                    left: 10px;
+                    right: 10px;
+                    min-width: 0;
+                    max-width: none;
+                }
             }
         </style>
     </head>
