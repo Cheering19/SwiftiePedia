@@ -1,4 +1,4 @@
-# [SwiftiePedia](https://cheering19.github.io/SwiftiePedia/Sito/Taylor_Swift.html)
+# [SwiftiePedia](https://cheering19.github.io/SwiftiePedia)
 
 Progetto realizzato per scopi scolastici nell'ambito del corso di Informatica. Il sito si pone l'obiettivo di catalogare la discografia completa di Taylor Swift.
 
