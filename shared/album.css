@@ -37,8 +37,9 @@ p {
 .back-button {
     display: inline-block;
     margin-bottom: 20px;
-    padding: 12px 20px;
-    min-height: 44px;
+    padding: 8px 18px;
+    min-height: 0;
+    line-height: 1.2;
     background-color: var(--accent, #3366cc);
     color: var(--button-text, #ffffff);
     text-decoration: none;
