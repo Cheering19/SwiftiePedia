@@ -1,4 +1,4 @@
-2.336const menuButton = document.querySelector('.toast-toggle');
+const menuButton = document.querySelector('.toast-toggle');
 const menu = document.querySelector('#toastMenu');
 
 if (menuButton && menu) {
