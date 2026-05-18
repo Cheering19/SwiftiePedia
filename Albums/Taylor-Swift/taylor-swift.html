@@ -1,278 +1,277 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <title>Taylor Swift (2006) - Album Details</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../shared/album.css">
-        <style>
-            body {
-                background-color: #cfe3c8;
-                font-family: Arial, sans-serif;
-                margin: 0;
-                color: #2d3a2e;
-            }
 
-            .container {
-                max-width: 900px;
-                margin: 24px auto;
-                padding: 24px;
-                background-color: #f4f0d9;
-                border-radius: 12px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
+<head>
+    <title>Taylor Swift (2006) - Album Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../shared/album.css">
+    <style>
+        body {
+            background-color: #cfe3c8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #2d3a2e;
+        }
 
-            .back-button {
-                display: inline-block;
-                margin-bottom: 20px;
-                padding: 10px 20px;
-                background-color: #6f8f56;
-                color: white;
-                text-decoration: none;
-                border-radius: 8px;
-                font-weight: bold;
-            }
+        .container {
+            max-width: 900px;
+            margin: 24px auto;
+            padding: 24px;
+            background-color: #f4f0d9;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-            .back-button:hover {
-                background-color: #4c6b3a;
-            }
+        .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #6f8f56;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
 
-            h1 {
-                color: #32533a;
-                text-align: center;
-                padding: 20px;
-                border: 2px solid #9db68a;
-                background-color: #d7e7c6;
-                border-radius: 10px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
+        .back-button:hover {
+            background-color: #4c6b3a;
+        }
 
-            .album-header {
-                display: flex;
-                gap: 30px;
-                align-items: flex-start;
-                margin: 30px 0;
-            }
+        h1 {
+            color: #32533a;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #9db68a;
+            background-color: #d7e7c6;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-            .album-cover {
-                width: 200px;
-                height: 200px;
-                object-fit: cover;
-                border-radius: 8px;
-                border: 3px solid #6f8f56;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            }
+        .album-header {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin: 30px 0;
+        }
 
-            .album-info h2 {
-                margin-top: 0;
-                color: #32533a;
-            }
+        .album-cover {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 3px solid #6f8f56;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
 
-            .section {
-                margin: 25px 0;
-                padding: 20px;
-                background-color: #edf4e6;
-                border-left: 4px solid #6f8f56;
-                border-radius: 8px;
-            }
+        .album-info h2 {
+            margin-top: 0;
+            color: #32533a;
+        }
 
-            .section h3 {
-                color: #32533a;
-                margin-top: 0;
-            }
+        .section {
+            margin: 25px 0;
+            padding: 20px;
+            background-color: #edf4e6;
+            border-left: 4px solid #6f8f56;
+            border-radius: 8px;
+        }
 
-            .versions {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 15px;
-                margin: 15px 0;
-            }
+        .section h3 {
+            color: #32533a;
+            margin-top: 0;
+        }
 
-            .version-card {
-                background-color: #fbfdf8;
-                padding: 15px;
-                border: 2px solid #b7cf9b;
-                border-radius: 8px;
-            }
+        .versions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 15px 0;
+        }
 
-            .version-card h4 {
-                margin: 0 0 10px;
-                color: #2f4b34;
-            }
+        .version-card {
+            background-color: #fbfdf8;
+            padding: 15px;
+            border: 2px solid #b7cf9b;
+            border-radius: 8px;
+        }
 
-            p {
-                font-size: 16px;
-                line-height: 1.6;
-            }
+        .version-card h4 {
+            margin: 0 0 10px;
+            color: #2f4b34;
+        }
 
-            .version-tab {
-                padding: 12px 24px;
-                border: none;
-                background: transparent;
-                cursor: pointer;
-                font-weight: bold;
-                color: #32533a;
-                border-radius: 6px;
-                transition: all 0.3s ease;
-            }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
 
-            .version-tab.active {
-                background-color: #6f8f56;
-                color: white;
-            }
+        .version-tab {
+            padding: 12px 24px;
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            font-weight: bold;
+            color: #32533a;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
 
-            .version-tab:hover {
-                background-color: rgba(111, 143, 86, 0.2);
-            }
+        .version-tab.active {
+            background-color: #6f8f56;
+            color: white;
+        }
 
-            .version-content {
-                display: none;
-            }
+        .version-tab:hover {
+            background-color: rgba(111, 143, 86, 0.2);
+        }
 
-            .version-content.active {
-                display: block;
-            }
+        .version-content {
+            display: none;
+        }
 
-            .badge {
-                display: inline-block;
-                background-color: #6f8f56;
-                color: white;
-                padding: 4px 12px;
-                border-radius: 20px;
-                font-size: 12px;
-                font-weight: bold;
-                margin-left: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <a href="../../Taylor_Swift.html" class="back-button">&larr; Torna agli album</a>
+        .version-content.active {
+            display: block;
+        }
 
-            <h1>Taylor Swift</h1>
+        .badge {
+            display: inline-block;
+            background-color: #6f8f56;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+    </style>
+</head>
 
-            <div id="original" class="version-content active">
-                <div class="album-header">
-                    <img class="album-cover" src="https://www.udiscovermusic.com/wp-content/uploads/2018/09/Taylor-Swift-debut-album-cover-web-optimised-820-354x354.jpg" alt="Taylor Swift album cover">
-                    <div class="album-info">
-                        <h2>Taylor Swift (2006)</h2>
-                        <p><strong>Genere:</strong> Country, Country-Pop</p>
-                        <p><strong>Data di uscita:</strong> 16 Ottobre 2006</p>
-                        <p><strong>Etichetta:</strong> Big Machine Records</p>
-                    </div>
+<body>
+    <div class="container">
+        <a href="../../Taylor_Swift.html" class="back-button">&larr; Torna agli album</a>
+
+        <h1>Taylor Swift</h1>
+
+        <div id="original" class="version-content active">
+            <div class="album-header">
+                <img class="album-cover"
+                    src="https://www.udiscovermusic.com/wp-content/uploads/2018/09/Taylor-Swift-debut-album-cover-web-optimised-820-354x354.jpg"
+                    alt="Taylor Swift album cover">
+                <div class="album-info">
+                    <h2>Taylor Swift (2006)</h2>
+                    <p><strong>Genere:</strong> Country, Country-Pop</p>
+                    <p><strong>Data di uscita:</strong> 16 Ottobre 2006</p>
+                    <p><strong>Etichetta:</strong> Big Machine Records</p>
                 </div>
             </div>
-
-            <div id="taylors" class="version-content">
-                <div class="album-header">
-                    <img class="album-cover" src="https://www.udiscovermusic.com/wp-content/uploads/2018/09/Taylor-Swift-debut-album-cover-web-optimised-820-354x354.jpg" alt="Taylor Swift Taylor's Version album cover">
-                    <div class="album-info">
-                        <h2>Taylor Swift (Taylor's Version) <span class="badge">2021</span></h2>
-                        <p><strong>Genere:</strong> Country, Country-Pop</p>
-                        <p><strong>Data di uscita:</strong> 24 Febbraio 2021</p>
-                        <p><strong>Versione:</strong> Riregistrata da Taylor Swift</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h3>Storia dell'Album</h3>
-                <p>
-                    "Taylor Swift" è l'album di debutto di Taylor Swift, uscito nel 2006 quando la cantante aveva solo 16 anni. 
-                    L'album rappresenta il suo ingresso nel mondo della musica country-pop ed è stato un grande successo commerciale 
-                    e critico. È stato composto interamente da Taylor Swift insieme a collaboratori come Liz Rose.
-                </p>
-                <p>
-                    L'album contiene la hit "Tim McGraw", il suo primo grande successo radiofonico, che lanciò la sua carriera 
-                    internazionale. Con questo album, Taylor Swift divenne il più giovane artista a scrivere e registrare 
-                    un'intera canzone in solitaria, consolidando la sua reputazione come una giovane e talentuosa autrice di canzoni.
-                </p>
-            </div>
-
-            <div class="section">
-                <h3>Versioni Disponibili</h3>
-                <div class="versions">
-                    <div class="version-card">
-                        <h4>Standard Edition</h4>
-                        <ul class="quality-list">
-                            <li>CD Audio</li>
-                            <li>Digital (iTunes)</li>
-                            <li>Streaming (Spotify, Apple Music)</li>
-                        </ul>
-                    </div>
-                    <div class="version-card">
-                        <h4>Deluxe Edition (2009)</h4>
-                        <ul class="quality-list">
-                            <li>CD with bonus tracks</li>
-                            <li>Limited vinyl</li>
-                            <li>Digital bonus content</li>
-                        </ul>
-                    </div>
-                    <div class="version-card">
-                        <h4>Taylor's Version (TBD)</h4>
-                        <ul class="quality-list">
-                            <li>Upcoming re-recording</li>
-                            <li>Original songs + vault tracks</li>
-                            <li>Full ownership by Taylor</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section">
-                <h3>Qualità Audio Disponibile</h3>
-                <div class="versions">
-                    <div class="version-card">
-                        <h4>Qualità Lossless</h4>
-                        <ul class="quality-list">
-                            <li>FLAC 16-bit/44.1kHz</li>
-                            <li>WAV non compresso</li>
-                            <li>Apple Music lossless</li>
-                        </ul>
-                    </div>
-                    <div class="version-card">
-                        <h4>Qualità Hi-Fi</h4>
-                        <ul class="quality-list">
-                            <li>Hi-Res Audio 24-bit/96kHz</li>
-                            <li>Disponibile su Qobuz</li>
-                            <li>Formato MQA su Tidal</li>
-                            <li>Dolby Atmos (E-AC3 Plus) disponibile su Apple Music dal 12 Dicembre 2025.</li>
-                        </ul>
-                    </div>
-                                </div>
-            </div>
-
-            <div class="section">
-                <h3>Elenco canzoni</h3>
-                <ul class="track-list">
-                    <li><a class="track-link" href="tim-mcgraw.html">Tim McGraw</a></li>
-                    <li><a class="track-link" href="picture-to-burn.html">Picture to Burn</a></li>
-                    <li><a class="track-link" href="teardrops-on-my-guitar.html">Teardrops on My Guitar</a></li>
-                    <li><a class="track-link" href="a-place-in-this-world.html">A Place in This World</a></li>
-                    <li><a class="track-link" href="cold-as-you.html">Cold as You</a></li>
-                    <li><a class="track-link" href="the-outside.html">The Outside</a></li>
-                    <li><a class="track-link" href="tied-together-with-a-smile.html">Tied Together with a Smile</a></li>
-                    <li><a class="track-link" href="stay-beautiful.html">Stay Beautiful</a></li>
-                    <li><a class="track-link" href="shouldve-said-no.html">Should've Said No</a></li>
-                    <li><a class="track-link" href="marys-song.html">Mary's Song (Oh My My My)</a></li>
-                    <li><a class="track-link" href="our-song.html">Our Song</a></li>
-                </ul>
-            </div>
-
-            <a href="../../Taylor_Swift.html" class="back-button">&larr; Torna agli album</a>
         </div>
-        
 
-        <script src="../../shared/album-tabs.js"></script>
-
-    
-        <div class="copyright-disclaimer" style="margin: 24px auto 0; padding: 12px 14px; max-width: 900px; font-size: 12px; line-height: 1.5; color: #555; border-top: 1px solid #ccc;">
-            <object type="text/html" data="../../shared/copyright.html" style="width:100%;border:0;height:90px;" aria-label="Disclaimer copyright"></object>
+        <div id="taylors" class="version-content">
+            <div class="album-header">
+                <img class="album-cover"
+                    src="https://www.udiscovermusic.com/wp-content/uploads/2018/09/Taylor-Swift-debut-album-cover-web-optimised-820-354x354.jpg"
+                    alt="Taylor Swift Taylor's Version album cover">
+                <div class="album-info">
+                    <h2>Taylor Swift (Taylor's Version) <span class="badge">2021</span></h2>
+                    <p><strong>Genere:</strong> Country, Country-Pop</p>
+                    <p><strong>Data di uscita:</strong> 24 Febbraio 2021</p>
+                    <p><strong>Versione:</strong> Riregistrata da Taylor Swift</p>
+                </div>
+            </div>
         </div>
-    </body>
+
+        <div class="section">
+            <h3>Storia dell'Album</h3>
+                Taylor Swift (l'album di debutto) non è il solito dischetto innocente di una ragazzina di campagna: è una vera e propria dichiarazione d'intenti sparata in faccia ai giganti di Nashville. Parla di amori adolescenziali, di cotte nate tra i banchi di scuola, di primi cuori spezzati e di insicurezze, ma lo fa con una precisione spaventose per una sedicenne. 
+            </p>
+            <p>
+             Lo ha scritto in questo modo, crudo e senza filtri, perché doveva dimostrare ai dirigenti in giacca e cravatta che non aveva alcun bisogno di autori cinquantenni per raccontare cosa provasse. Invece di farsi confezionare su misura come la classica bambolina country da mandare in radio, ha preso la sua chitarra, ha messo in rima i diari delle sue giornate al liceo e ha preteso il controllo creativo. Voleva disperatamente essere presa sul serio, dimostrando che i drammi e i sentimenti dei sedicenni sono reali e non vanno banalizzati. E alla fine ha vinto lei: ha costretto un intero genere musicale, tradizionalista e chiuso per natura, ad ascoltarla e ad adattarsi alle sue regole.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>Versioni Disponibili</h3>
+            <div class="versions">
+                <div class="version-card">
+                    <h4>Standard Edition</h4>
+                    <ul class="quality-list">
+                        <li>CD Audio</li>
+                        <li>Digital (iTunes)</li>
+                        <li>Streaming (Spotify, Apple Music)</li>
+                    </ul>
+                </div>
+                <div class="version-card">
+                    <h4>Deluxe Edition (2009)</h4>
+                    <ul class="quality-list">
+                        <li>CD with bonus tracks</li>
+                        <li>Limited vinyl</li>
+                        <li>Digital bonus content</li>
+                    </ul>
+                </div>
+                <div class="version-card">
+                    <h4>Taylor's Version (TBD)</h4>
+                    <ul class="quality-list">
+                        <li>Upcoming re-recording</li>
+                        <li>Original songs + vault tracks</li>
+                        <li>Full ownership by Taylor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Qualità Audio Disponibile</h3>
+            <div class="versions">
+                <div class="version-card">
+                    <h4>Qualità Lossless</h4>
+                    <ul class="quality-list">
+                        <li>FLAC 16-bit/44.1kHz</li>
+                        <li>WAV non compresso</li>
+                        <li>Apple Music lossless</li>
+                    </ul>
+                </div>
+                <div class="version-card">
+                    <h4>Qualità Hi-Fi</h4>
+                    <ul class="quality-list">
+                        <li>Hi-Res Audio 24-bit/96kHz</li>
+                        <li>Disponibile su Qobuz</li>
+                        <li>Formato MQA su Tidal</li>
+                        <li>Dolby Atmos (E-AC3 Plus) disponibile su Apple Music dal 12 Dicembre 2025.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Elenco canzoni</h3>
+            <ul class="track-list">
+                <li><a class="track-link" href="tim-mcgraw.html">Tim McGraw</a></li>
+                <li><a class="track-link" href="picture-to-burn.html">Picture to Burn</a></li>
+                <li><a class="track-link" href="teardrops-on-my-guitar.html">Teardrops on My Guitar</a></li>
+                <li><a class="track-link" href="a-place-in-this-world.html">A Place in This World</a></li>
+                <li><a class="track-link" href="cold-as-you.html">Cold as You</a></li>
+                <li><a class="track-link" href="the-outside.html">The Outside</a></li>
+                <li><a class="track-link" href="tied-together-with-a-smile.html">Tied Together with a Smile</a></li>
+                <li><a class="track-link" href="stay-beautiful.html">Stay Beautiful</a></li>
+                <li><a class="track-link" href="shouldve-said-no.html">Should've Said No</a></li>
+                <li><a class="track-link" href="marys-song.html">Mary's Song (Oh My My My)</a></li>
+                <li><a class="track-link" href="our-song.html">Our Song</a></li>
+            </ul>
+        </div>
+
+        <a href="../../Taylor_Swift.html" class="back-button">&larr; Torna agli album</a>
+    </div>
+
+
+    <script src="../../shared/album-tabs.js"></script>
+
+
+    <div class="copyright-disclaimer"
+        style="margin: 24px auto 0; padding: 12px 14px; max-width: 900px; font-size: 12px; line-height: 1.5; color: #555; border-top: 1px solid #ccc;">
+        <object type="text/html" data="../../shared/copyright.html" style="width:100%;border:0;height:90px;"
+            aria-label="Disclaimer copyright"></object>
+    </div>
+</body>
+
 </html>
-
-
-
-
-

@@ -24,6 +24,10 @@ p {
     overflow-wrap: anywhere;
 }
 
+.lyrics {
+    line-height: 1.8;
+}
+
 .container {
     max-width: 900px;
     margin: 24px auto;
